@@ -1,0 +1,20 @@
+class Rectangle{
+    public:
+    int length,breadth;
+    Rectangle(){
+        length=0;
+        breadth=0;
+    }
+    Rectangle(int x,int y){
+        length=x;
+        breadth=y;
+    }
+    Rectangle(int x){
+        length=x;
+        breadth=x;
+    }
+
+}
+int area(int m,int n){
+    return m*n;
+}
