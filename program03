@@ -1,14 +1,22 @@
-// Create a class to print the area of a square and a rectangle. 
-// The class has two functions with the same name but different number of parameters. 
-// The function for printing the area of rectangle has two parameters which are its length and breadth respectively
-//  while the other function for printing the area of square has one parameter
-//  which is the side of the square.
-class area(){
-    public:
+// Create a class to print the area of a square and a rectangle. The class has two functions
+//  with the same name but different number of parameters. 
+//  The function for printing the area of rectangle has two parameters which are its length and breadth
+//   respectively while the other function for printing the area of square has one parameter 
+//   which is the side of the square.
+#include<iostream>
+using namespace std;
+class area{
+     public:
     void areaa(int a,int b){
-        cout<<"Area of rectangle is "a*b;
+        cout<<"Area of rectangle is "<<a*b<<endl;
     }
-    void areaa(int a,int b){
-        cout<<"Area of square is : "a*a;
+    void areaa(int a){
+        cout<<"Area of square is : "<<a*a<<endl;
     }
 };
+int main(){
+    area re,sq;
+    re.areaa(12,12);
+    sq.areaa(11);
+    return 0;
+}
