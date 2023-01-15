@@ -33,11 +33,15 @@ class Student{
 };
 int main(){
     int n;
-    cout<<"Enter no. of student : ";
+    cout<<"Enter no. of student : \n";
     Student stu[10];
-
-    
-
+     for(int i=0;i<10;i++){
+    stu[i].SetInfo("jh",12,"kj");
+     }
+     for(int i=0;i<10;i++){
+    stu[i].showdata();
+    cout<<endl;
+     }
 
     return 0;
 }
